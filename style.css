@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  /*   margin: 0;
+    padding: 0; */
+}
+.wrapper{
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    background-color: #34303D;
+    position: relative;
+    transition: all 1s;
+}
+.wrapperBg{
+    background-color: #00D1D2;
+}
+.flex-column-center{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+.firstscrin{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.firstscrinMove{
+    transform: translateX(-100%) !important;
+}
+.firstscrin__danger img{
+    width: 258px;
+    height: 258px;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.firstscrin__title{
+    padding-top: 27px;
+    animation: opacityAnim 1.5s linear;
+}
+@keyframes opacityAnim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.firstscrin__danger{
+    padding-top: 31px;
+    animation: danger-Anim 0.8s linear;
+}
+@keyframes danger-Anim {
+    from{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+.firstscrin__ages{
+    padding-top: 15px;
+    animation: opacityAnim 1.5s linear;
+}
+.secondscrin{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.secondscrinMove{
+    transform: translateX(0) !important;
+}
+.secondscrin_title{
+    padding-top: 20px;
+}
+.secondscrin__tester{
+    padding-top: 20px;
+}
+.secondscrin__btns{
+    padding-top: 10px;
+}
+.secondscrin__btns button{
+    width: 197px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #34303D;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+.secondscrin__btns button:hover{
+    background-color: #DB3624;
+}
+.pb10{
+    padding-bottom: 10px;
+}
+.flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    transform: skewX(-10deg); 
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
+    animation: flareAnimation 3s infinite linear;
+}
+
+@keyframes flareAnimation {
+    0% , 100%{
+        left: -50%;
+    }
+    50% {
+        left: 150%;
+    }
+}
+.aic{
+    align-items: center;
+    padding-top: 16px;
+}
+.aic button{
+    width: 210px;
+    height: 59px;
+    background: #DB3624;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.aic button:hover{
+    background: #34303D;
+}
+.map{
+    width: 320px;
+    height: 390px;
+}
+.mapScrin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.logo{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
