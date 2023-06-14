@@ -30,9 +30,14 @@ function init() {
 
     myMap.setCenter([43.233735, 76.957136]);
 
-    let myPlacemark = new ymaps.Placemark([43.233735, 76.957136], {}, {
-        preset: 'islands#redDotIcon'
-    });
+    let myPlacemark = new ymaps.Placemark([43.233735, 76.957136], {}, 
+        {
+            iconLayout: 'default#image', 
+            iconImageHref: 'img/location.svg', 
+            iconImageSize: [21, 27], 
+            iconImageOffset: [-21, -27] 
+        }
+    );
 
     myMap.geoObjects.add(myPlacemark);
 }
